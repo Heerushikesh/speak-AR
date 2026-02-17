@@ -1,0 +1,246 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Speak AR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="demo-page">
+    <!-- Particle Background -->
+    <div id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Speak<span class="accent">AR</span></span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="demo.html" class="nav-link active">Demo</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="gradient-text">Try The Demo</span>
+            </h1>
+            <p class="page-description">Experience Speak AR with our interactive demo - no download required!</p>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-container">
+                <div class="demo-phone">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen" id="ar-screen">
+                            <div class="ar-view">
+                                <div class="ar-background">
+                                    <div class="ar-grid"></div>
+                                </div>
+                                <div class="ar-character-container">
+                                    <div class="ar-character-demo" id="ar-character">
+                                        <div class="char-head-demo">
+                                            <div class="char-eyes-demo">
+                                                <div class="eye-demo"></div>
+                                                <div class="eye-demo"></div>
+                                            </div>
+                                            <div class="char-mouth-demo"></div>
+                                        </div>
+                                        <div class="char-body-demo"></div>
+                                    </div>
+                                    <div class="speech-bubble-demo" id="speech-bubble">
+                                        <span id="bubble-text">Hello! I'm your AR learning partner. Say hello back!</span>
+                                    </div>
+                                </div>
+                                <div class="ar-controls">
+                                    <button class="ar-btn" id="mic-button">
+                                        <span class="mic-animation">🎤</span>
+                                    </button>
+                                </div>
+                                <div class="ar-info">
+                                    <span class="ar-lang">🇪🇸 Spanish</span>
+                                    <span class="ar-level">★ Level 1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-instructions">
+                    <h3>How to Use This Demo</h3>
+                    <ol>
+                        <li>Click the microphone button</li>
+                        <li>Speak the phrase shown in the bubble</li>
+                        <li>Watch the character react to your speech</li>
+                        <li>Earn XP and level up!</li>
+                    </ol>
+                    
+                    <div class="demo-phrases">
+                        <h4>Try these phrases:</h4>
+                        <button class="phrase-btn" data-phrase="Hello">Hello</button>
+                        <button class="phrase-btn" data-phrase="How are you?">How are you?</button>
+                        <button class="phrase-btn" data-phrase="Good morning">Good morning</button>
+                        <button class="phrase-btn" data-phrase="Thank you">Thank you</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Game Preview -->
+    <section class="mini-game-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Preview</span>
+                Mini Games
+            </h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-preview game-1">
+                        <div class="game-icon">🎯</div>
+                    </div>
+                    <h4>Word Match</h4>
+                    <p>Match words with images</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-preview game-2">
+                        <div class="game-icon">💬</div>
+                    </div>
+                    <h4>Conversation</h4>
+                    <p>Role-play scenarios</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-preview game-3">
+                        <div class="game-icon">🗣️</div>
+                    </div>
+                    <h4>Pronunciation</h4>
+                    <p>Master your accent</p>
+                </div>
+                <div class="game-card">
+                    <div class="game-preview game-4">
+                        <div class="game-icon">⚡</div>
+                    </div>
+                    <h4>Speed Round</h4>
+                    <p>Quick-fire questions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Preview -->
+    <section class="progress-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Track Your</span>
+                Progress
+            </h2>
+            <div class="progress-preview">
+                <div class="progress-card">
+                    <div class="progress-circle" id="progress-circle-1">
+                        <span class="progress-value">75%</span>
+                    </div>
+                    <h4>Vocabulary</h4>
+                    <p>150/200 words</p>
+                </div>
+                <div class="progress-card">
+                    <div class="progress-circle" id="progress-circle-2">
+                        <span class="progress-value">60%</span>
+                    </div>
+                    <h4>Grammar</h4>
+                    <p>12/20 lessons</p>
+                </div>
+                <div class="progress-card">
+                    <div class="progress-circle" id="progress-circle-3">
+                        <span class="progress-value">85%</span>
+                    </div>
+                    <h4>Pronunciation</h4>
+                    <p>85/100 score</p>
+                </div>
+                <div class="progress-card">
+                    <div class="progress-circle" id="progress-circle-4">
+                        <span class="progress-value">90%</span>
+                    </div>
+                    <h4>Listening</h4>
+                    <p>45/50 exercises</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up CTA -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-content">
+                <h2>Love the Demo?</h2>
+                <p>Create a free account to save your progress and unlock all features</p>
+                <form class="signup-form" id="demo-signup-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Get Started Free</span>
+                    </button>
+                </form>
+                <p class="signup-note">No credit card required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">Speak<span class="accent">AR</span></span>
+                    </a>
+                    <p>The future of language learning is here.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🎥</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Speak AR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

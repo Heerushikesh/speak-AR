@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Speak AR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="how-it-works-page">
+    <!-- Particle Background -->
+    <div id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Speak<span class="accent">AR</span></span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="how-it-works.html" class="nav-link active">How It Works</a></li>
+                <li><a href="demo.html" class="nav-link">Demo</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="gradient-text">How It Works</span>
+            </h1>
+            <p class="page-description">Get started with Speak AR in just a few simple steps</p>
+        </div>
+    </section>
+
+    <!-- Steps Timeline -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="timeline">
+                <div class="timeline-item" data-step="1">
+                    <div class="timeline-marker">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="step-card">
+                            <div class="step-icon">📱</div>
+                            <h3>Download & Install</h3>
+                            <p>Get Speak AR from the App Store or Google Play. It's free to download!</p>
+                            <div class="step-features">
+                                <span>iOS & Android</span>
+                                <span>Web Version</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="2">
+                    <div class="timeline-marker">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="step-card">
+                            <div class="step-icon">👤</div>
+                            <h3>Create Your Profile</h3>
+                            <p>Sign up and choose the language you want to learn. Set your learning goals!</p>
+                            <div class="step-features">
+                                <span>50+ Languages</span>
+                                <span>Custom Goals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="3">
+                    <div class="timeline-marker">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="step-card">
+                            <div class="step-icon">📷</div>
+                            <h3>Enable AR Mode</h3>
+                            <p>Grant camera access and point your device to bring virtual characters into your space</p>
+                            <div class="step-features">
+                                <span>AR Ready</span>
+                                <span>Smart Detection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="4">
+                    <div class="timeline-marker">
+                        <span>4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="step-card">
+                            <div class="step-icon">🗣️</div>
+                            <h3>Start Speaking</h3>
+                            <p>Interact with AR characters, practice conversations, and get real-time feedback</p>
+                            <div class="step-features">
+                                <span>Voice Recognition</span>
+                                <span>AI Feedback</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-step="5">
+                    <div class="timeline-marker">
+                        <span>5</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="step-card">
+                            <div class="step-icon">🏆</div>
+                            <h3>Level Up!</h3>
+                            <p>Earn XP, unlock achievements, and track your progress as you become fluent</p>
+                            <div class="step-features">
+                                <span>Gamification</span>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="interactive-demo">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Try It</span>
+                Right Now
+            </h2>
+            <div class="demo-preview">
+                <div class="demo-screen">
+                    <div class="demo-header">
+                        <span class="demo-logo">SpeakAR</span>
+                        <span class="demo-user">★ Level 1</span>
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-ar-area" id="demo-ar-area">
+                            <div class="demo-character">
+                                <div class="demo-char-head">
+                                    <div class="demo-char-eyes">
+                                        <div class="eye"></div>
+                                        <div class="eye"></div>
+                                    </div>
+                                    <div class="demo-char-mouth"></div>
+                                </div>
+                                <div class="demo-char-body"></div>
+                            </div>
+                            <p class="demo-hint">Click to speak</p>
+                        </div>
+                        <div class="demo-controls">
+                            <button class="demo-btn" id="speak-btn">
+                                <span class="mic-icon">🎤</span>
+                                <span>Hold to Speak</span>
+                            </button>
+                        </div>
+                        <div class="demo-response" id="demo-response">
+                            <p>Try saying: "Hello, how are you?"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Process -->
+    <section class="learning-process">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">The Learning</span>
+                Process
+            </h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3>Assessment</h3>
+                    <p>Take a quick quiz to determine your current level and learning style</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3>Personalization</h3>
+                    <p>AI creates a custom curriculum based on your goals and pace</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3>Practice</h3>
+                    <p>Engage in AR-powered conversations and interactive exercises</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <h3>Feedback</h3>
+                    <p>Get instant AI feedback on pronunciation, grammar, and fluency</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">05</div>
+                    <h3>Progress</h3>
+                    <p>Track your improvement and earn rewards as you advance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">Frequently</span>
+                Asked Questions
+            </h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Is Speak AR free to use?</h4>
+                    <p>Yes! The basic version is completely free. Premium features are available with a subscription.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I need special equipment?</h4>
+                    <p>No! Speak AR works with any smartphone or tablet with a camera. No AR headset required.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How accurate is the voice recognition?</h4>
+                    <p>Our AI-powered voice recognition has a 99% accuracy rate and works with various accents.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I learn multiple languages?</h4>
+                    <p>Absolutely! You can switch between any of our 50+ supported languages at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of learners and start your language journey today</p>
+                <a href="demo.html" class="btn btn-primary btn-large">
+                    <span>Try Free Demo</span>
+                    <span class="btn-glow"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">Speak<span class="accent">AR</span></span>
+                    </a>
+                    <p>The future of language learning is here.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🎥</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Speak AR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
